@@ -1,0 +1,8 @@
+project: pglast
+target: fuzz-sql
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-sql/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-sql
+    libfuzzer: true

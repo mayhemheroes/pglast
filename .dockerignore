@@ -1,0 +1,15 @@
+# Prune the build context. NOTE: .git is intentionally NOT excluded — the commit image must
+# bake the full `mayhem` branch history (upstream + the additive integration commit) per SPEC
+# §6.2 item 2 (mayhem.yml checks out with fetch-depth: 0).
+**/__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+/build/
+/dist/
+/docs/_build/
+/.pytest_cache/
+/.cache/
+/.coverage
+/coverage.json
